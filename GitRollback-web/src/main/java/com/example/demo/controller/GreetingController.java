@@ -19,6 +19,7 @@ public class GreetingController {
 	@Autowired
 	private GetUserInfoService getUserInfoService;
 
+
 	@GetMapping("/greeting")
 	public String greeting(@RequestParam(name="name", required=false, defaultValue="1") String name, Model model) {
 
